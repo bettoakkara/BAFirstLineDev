@@ -10,6 +10,26 @@
 		54373D5025CBCA430084702E /* BAFloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54373D4F25CBCA430084702E /* BAFloatingTextField.swift */; };
 		54373D5425CBCF3E0084702E /* BAGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54373D5325CBCF3E0084702E /* BAGradientView.swift */; };
 		54373D5825CBD80A0084702E /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54373D5725CBD80A0084702E /* StringUtilities.swift */; };
+		543F00E725CD40170070BC03 /* BAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 546F69C525CAB39600CC2638 /* BAExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		543F00E925CD40170070BC03 /* LineScaleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152525CBF72000C7990A /* LineScaleIndicator.swift */; };
+		543F00EA25CD40170070BC03 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152E25CBF72000C7990A /* Extensions.swift */; };
+		543F00EB25CD40170070BC03 /* BALoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482153025CBF72000C7990A /* BALoadingButton.swift */; };
+		543F00EC25CD40170070BC03 /* IndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152D25CBF72000C7990A /* IndicatorProtocol.swift */; };
+		543F00ED25CD40170070BC03 /* BallPulseSyncIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152B25CBF72000C7990A /* BallPulseSyncIndicator.swift */; };
+		543F00EE25CD40170070BC03 /* BAFloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54373D4F25CBCA430084702E /* BAFloatingTextField.swift */; };
+		543F00EF25CD40170070BC03 /* MaterialLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152C25CBF72000C7990A /* MaterialLoadingIndicator.swift */; };
+		543F00F025CD40170070BC03 /* BallBeatIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152625CBF72000C7990A /* BallBeatIndicator.swift */; };
+		543F00F125CD40170070BC03 /* BallPulseIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152325CBF72000C7990A /* BallPulseIndicator.swift */; };
+		543F00F225CD40170070BC03 /* LineScalePulseIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152A25CBF72000C7990A /* LineScalePulseIndicator.swift */; };
+		543F00F325CD40170070BC03 /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54373D5725CBD80A0084702E /* StringUtilities.swift */; };
+		543F00F425CD40170070BC03 /* ViewUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F69CE25CAB42A00CC2638 /* ViewUtilities.swift */; };
+		543F00F525CD40170070BC03 /* LineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152425CBF72000C7990A /* LineSpinFadeLoader.swift */; };
+		543F00F625CD40170070BC03 /* BALoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482154B25CC11BB00C7990A /* BALoaderButton.swift */; };
+		543F00F725CD40170070BC03 /* BallSpinFadeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152825CBF72000C7990A /* BallSpinFadeIndicator.swift */; };
+		543F00F825CD40170070BC03 /* LBIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152925CBF72000C7990A /* LBIndicator.swift */; };
+		543F00F925CD40170070BC03 /* BAGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54373D5325CBCF3E0084702E /* BAGradientView.swift */; };
+		543F00FA25CD40170070BC03 /* LogUitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F69EB25CAB80000CC2638 /* LogUitlities.swift */; };
+		543F00FB25CD40170070BC03 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152725CBF72000C7990A /* NVActivityIndicatorShape.swift */; };
 		546F69C725CAB39600CC2638 /* BAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 546F69C525CAB39600CC2638 /* BAExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		546F69CF25CAB42A00CC2638 /* ViewUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F69CE25CAB42A00CC2638 /* ViewUtilities.swift */; };
 		546F69D825CAB46C00CC2638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F69D725CAB46C00CC2638 /* AppDelegate.swift */; };
@@ -21,6 +41,20 @@
 		546F69EC25CAB80000CC2638 /* LogUitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F69EB25CAB80000CC2638 /* LogUitlities.swift */; };
 		546F69F025CAB98F00CC2638 /* BAExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546F69C225CAB39600CC2638 /* BAExtensions.framework */; };
 		546F69F125CAB98F00CC2638 /* BAExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 546F69C225CAB39600CC2638 /* BAExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5482153225CBF72000C7990A /* BallPulseIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152325CBF72000C7990A /* BallPulseIndicator.swift */; };
+		5482153325CBF72000C7990A /* LineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152425CBF72000C7990A /* LineSpinFadeLoader.swift */; };
+		5482153425CBF72000C7990A /* LineScaleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152525CBF72000C7990A /* LineScaleIndicator.swift */; };
+		5482153525CBF72000C7990A /* BallBeatIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152625CBF72000C7990A /* BallBeatIndicator.swift */; };
+		5482153625CBF72000C7990A /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152725CBF72000C7990A /* NVActivityIndicatorShape.swift */; };
+		5482153725CBF72000C7990A /* BallSpinFadeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152825CBF72000C7990A /* BallSpinFadeIndicator.swift */; };
+		5482153825CBF72000C7990A /* LBIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152925CBF72000C7990A /* LBIndicator.swift */; };
+		5482153925CBF72000C7990A /* LineScalePulseIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152A25CBF72000C7990A /* LineScalePulseIndicator.swift */; };
+		5482153A25CBF72000C7990A /* BallPulseSyncIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152B25CBF72000C7990A /* BallPulseSyncIndicator.swift */; };
+		5482153B25CBF72000C7990A /* MaterialLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152C25CBF72000C7990A /* MaterialLoadingIndicator.swift */; };
+		5482153C25CBF72000C7990A /* IndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152D25CBF72000C7990A /* IndicatorProtocol.swift */; };
+		5482153D25CBF72000C7990A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482152E25CBF72000C7990A /* Extensions.swift */; };
+		5482153F25CBF72000C7990A /* BALoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482153025CBF72000C7990A /* BALoadingButton.swift */; };
+		5482154C25CC11BB00C7990A /* BALoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482154B25CC11BB00C7990A /* BALoaderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +85,8 @@
 		54373D4F25CBCA430084702E /* BAFloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAFloatingTextField.swift; sourceTree = "<group>"; };
 		54373D5325CBCF3E0084702E /* BAGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAGradientView.swift; sourceTree = "<group>"; };
 		54373D5725CBD80A0084702E /* StringUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilities.swift; sourceTree = "<group>"; };
+		543F010125CD40170070BC03 /* BAExtensions Release.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "BAExtensions Release.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543F010225CD40170070BC03 /* BAExtensions Release-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BAExtensions Release-Info.plist"; path = "/Users/bettoakkara/BAExtensions/BAExtensions Release-Info.plist"; sourceTree = "<absolute>"; };
 		546F69C225CAB39600CC2638 /* BAExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BAExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546F69C525CAB39600CC2638 /* BAExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAExtensions.h; sourceTree = "<group>"; };
 		546F69C625CAB39600CC2638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,9 +100,30 @@
 		546F69E325CAB46E00CC2638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546F69E525CAB46E00CC2638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546F69EB25CAB80000CC2638 /* LogUitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUitlities.swift; sourceTree = "<group>"; };
+		5482152325CBF72000C7990A /* BallPulseIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallPulseIndicator.swift; sourceTree = "<group>"; };
+		5482152425CBF72000C7990A /* LineSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		5482152525CBF72000C7990A /* LineScaleIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineScaleIndicator.swift; sourceTree = "<group>"; };
+		5482152625CBF72000C7990A /* BallBeatIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallBeatIndicator.swift; sourceTree = "<group>"; };
+		5482152725CBF72000C7990A /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		5482152825CBF72000C7990A /* BallSpinFadeIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallSpinFadeIndicator.swift; sourceTree = "<group>"; };
+		5482152925CBF72000C7990A /* LBIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBIndicator.swift; sourceTree = "<group>"; };
+		5482152A25CBF72000C7990A /* LineScalePulseIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineScalePulseIndicator.swift; sourceTree = "<group>"; };
+		5482152B25CBF72000C7990A /* BallPulseSyncIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallPulseSyncIndicator.swift; sourceTree = "<group>"; };
+		5482152C25CBF72000C7990A /* MaterialLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLoadingIndicator.swift; sourceTree = "<group>"; };
+		5482152D25CBF72000C7990A /* IndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorProtocol.swift; sourceTree = "<group>"; };
+		5482152E25CBF72000C7990A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5482153025CBF72000C7990A /* BALoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BALoadingButton.swift; sourceTree = "<group>"; };
+		5482154B25CC11BB00C7990A /* BALoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BALoaderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		543F00FC25CD40170070BC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546F69BF25CAB39600CC2638 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +149,7 @@
 				546F69D625CAB46C00CC2638 /* BAExtenisonsExample */,
 				546F69C325CAB39600CC2638 /* Products */,
 				546F69EF25CAB98F00CC2638 /* Frameworks */,
+				543F010225CD40170070BC03 /* BAExtensions Release-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +158,7 @@
 			children = (
 				546F69C225CAB39600CC2638 /* BAExtensions.framework */,
 				546F69D525CAB46C00CC2638 /* BAExtenisonsExample.app */,
+				543F010125CD40170070BC03 /* BAExtensions Release.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,11 +168,13 @@
 			children = (
 				546F69C525CAB39600CC2638 /* BAExtensions.h */,
 				546F69C625CAB39600CC2638 /* Info.plist */,
+				5482152125CBF72000C7990A /* LoadingButtons */,
 				546F69CE25CAB42A00CC2638 /* ViewUtilities.swift */,
 				546F69EB25CAB80000CC2638 /* LogUitlities.swift */,
 				54373D4F25CBCA430084702E /* BAFloatingTextField.swift */,
 				54373D5325CBCF3E0084702E /* BAGradientView.swift */,
 				54373D5725CBD80A0084702E /* StringUtilities.swift */,
+				5482154B25CC11BB00C7990A /* BALoaderButton.swift */,
 			);
 			path = BAExtensions;
 			sourceTree = "<group>";
@@ -139,9 +200,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5482152125CBF72000C7990A /* LoadingButtons */ = {
+			isa = PBXGroup;
+			children = (
+				5482152225CBF72000C7990A /* Indicators */,
+				5482152E25CBF72000C7990A /* Extensions.swift */,
+				5482153025CBF72000C7990A /* BALoadingButton.swift */,
+			);
+			path = LoadingButtons;
+			sourceTree = "<group>";
+		};
+		5482152225CBF72000C7990A /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				5482152325CBF72000C7990A /* BallPulseIndicator.swift */,
+				5482152425CBF72000C7990A /* LineSpinFadeLoader.swift */,
+				5482152525CBF72000C7990A /* LineScaleIndicator.swift */,
+				5482152625CBF72000C7990A /* BallBeatIndicator.swift */,
+				5482152725CBF72000C7990A /* NVActivityIndicatorShape.swift */,
+				5482152825CBF72000C7990A /* BallSpinFadeIndicator.swift */,
+				5482152925CBF72000C7990A /* LBIndicator.swift */,
+				5482152A25CBF72000C7990A /* LineScalePulseIndicator.swift */,
+				5482152B25CBF72000C7990A /* BallPulseSyncIndicator.swift */,
+				5482152C25CBF72000C7990A /* MaterialLoadingIndicator.swift */,
+				5482152D25CBF72000C7990A /* IndicatorProtocol.swift */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		543F00E625CD40170070BC03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543F00E725CD40170070BC03 /* BAExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546F69BD25CAB39600CC2638 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +250,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		543F00E525CD40160070BC03 /* BAExtensions Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543F00FE25CD40170070BC03 /* Build configuration list for PBXNativeTarget "BAExtensions Release" */;
+			buildPhases = (
+				543F00E625CD40170070BC03 /* Headers */,
+				543F00E825CD40170070BC03 /* Sources */,
+				543F00FC25CD40170070BC03 /* Frameworks */,
+				543F00FD25CD40170070BC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BAExtensions Release";
+			productName = BAExtensions;
+			productReference = 543F010125CD40170070BC03 /* BAExtensions Release.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		546F69C125CAB39600CC2638 /* BAExtensions */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546F69CA25CAB39600CC2638 /* Build configuration list for PBXNativeTarget "BAExtensions" */;
@@ -223,11 +338,19 @@
 			targets = (
 				546F69C125CAB39600CC2638 /* BAExtensions */,
 				546F69D425CAB46C00CC2638 /* BAExtenisonsExample */,
+				543F00E525CD40160070BC03 /* BAExtensions Release */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		543F00FD25CD40170070BC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546F69C025CAB39600CC2638 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,15 +371,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		543F00E825CD40170070BC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543F00E925CD40170070BC03 /* LineScaleIndicator.swift in Sources */,
+				543F00EA25CD40170070BC03 /* Extensions.swift in Sources */,
+				543F00EB25CD40170070BC03 /* BALoadingButton.swift in Sources */,
+				543F00EC25CD40170070BC03 /* IndicatorProtocol.swift in Sources */,
+				543F00ED25CD40170070BC03 /* BallPulseSyncIndicator.swift in Sources */,
+				543F00EE25CD40170070BC03 /* BAFloatingTextField.swift in Sources */,
+				543F00EF25CD40170070BC03 /* MaterialLoadingIndicator.swift in Sources */,
+				543F00F025CD40170070BC03 /* BallBeatIndicator.swift in Sources */,
+				543F00F125CD40170070BC03 /* BallPulseIndicator.swift in Sources */,
+				543F00F225CD40170070BC03 /* LineScalePulseIndicator.swift in Sources */,
+				543F00F325CD40170070BC03 /* StringUtilities.swift in Sources */,
+				543F00F425CD40170070BC03 /* ViewUtilities.swift in Sources */,
+				543F00F525CD40170070BC03 /* LineSpinFadeLoader.swift in Sources */,
+				543F00F625CD40170070BC03 /* BALoaderButton.swift in Sources */,
+				543F00F725CD40170070BC03 /* BallSpinFadeIndicator.swift in Sources */,
+				543F00F825CD40170070BC03 /* LBIndicator.swift in Sources */,
+				543F00F925CD40170070BC03 /* BAGradientView.swift in Sources */,
+				543F00FA25CD40170070BC03 /* LogUitlities.swift in Sources */,
+				543F00FB25CD40170070BC03 /* NVActivityIndicatorShape.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546F69BE25CAB39600CC2638 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5482153425CBF72000C7990A /* LineScaleIndicator.swift in Sources */,
+				5482153D25CBF72000C7990A /* Extensions.swift in Sources */,
+				5482153F25CBF72000C7990A /* BALoadingButton.swift in Sources */,
+				5482153C25CBF72000C7990A /* IndicatorProtocol.swift in Sources */,
+				5482153A25CBF72000C7990A /* BallPulseSyncIndicator.swift in Sources */,
 				54373D5025CBCA430084702E /* BAFloatingTextField.swift in Sources */,
+				5482153B25CBF72000C7990A /* MaterialLoadingIndicator.swift in Sources */,
+				5482153525CBF72000C7990A /* BallBeatIndicator.swift in Sources */,
+				5482153225CBF72000C7990A /* BallPulseIndicator.swift in Sources */,
+				5482153925CBF72000C7990A /* LineScalePulseIndicator.swift in Sources */,
 				54373D5825CBD80A0084702E /* StringUtilities.swift in Sources */,
 				546F69CF25CAB42A00CC2638 /* ViewUtilities.swift in Sources */,
+				5482153325CBF72000C7990A /* LineSpinFadeLoader.swift in Sources */,
+				5482154C25CC11BB00C7990A /* BALoaderButton.swift in Sources */,
+				5482153725CBF72000C7990A /* BallSpinFadeIndicator.swift in Sources */,
+				5482153825CBF72000C7990A /* LBIndicator.swift in Sources */,
 				54373D5425CBCF3E0084702E /* BAGradientView.swift in Sources */,
 				546F69EC25CAB80000CC2638 /* LogUitlities.swift in Sources */,
+				5482153625CBF72000C7990A /* NVActivityIndicatorShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +463,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		543F00FF25CD40170070BC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L6AQ4NYKT9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BAExtensions Release-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Akkara.BAExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		543F010025CD40170070BC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L6AQ4NYKT9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BAExtensions Release-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Akkara.BAExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		546F69C825CAB39600CC2638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,6 +736,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		543F00FE25CD40170070BC03 /* Build configuration list for PBXNativeTarget "BAExtensions Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543F00FF25CD40170070BC03 /* Debug */,
+				543F010025CD40170070BC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		546F69BC25CAB39600CC2638 /* Build configuration list for PBXProject "BAExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
