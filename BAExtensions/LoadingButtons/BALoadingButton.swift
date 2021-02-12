@@ -25,17 +25,21 @@ public enum LoaderType {
     case ball_Pulse_Sync
 }
 
+@available(iOS 13.0, *)
 @IBDesignable
 open class BALoadingButton: UIButton {
 
     // MARK: - Public variables
+
     /**
      Current loading state.
      */
     public var isLoading: Bool = false
+    private var bgColor : UIColor? = .clear
     /**
      The flag that indicate if the shadow is added to prevent duplicate drawing.
      */
+
     public var shadowAdded: Bool = false
     // MARK: - Package-protected variables
     /**
@@ -46,23 +50,6 @@ open class BALoadingButton: UIButton {
      Set to true to add shadow to the button.
      */
     @IBInspectable open var withShadow: Bool = false
-    /**
-     The corner radius of the button
-     */
-    @IBInspectable open override var cornerRadius: CGFloat {
-        didSet {
-            self.clipsToBounds = (self.cornerRadius > 0)
-            self.layer.cornerRadius = self.cornerRadius
-        }
-    }
-    /**
-     Button background color
-     */
-    @IBInspectable public var bgColor: UIColor = .lightGray {
-        didSet {
-            self.backgroundColor = self.bgColor
-        }
-    }
     /**
      Shadow view.
      */
@@ -85,6 +72,14 @@ open class BALoadingButton: UIButton {
         case fill
         case outline
     }
+
+    var buttonStyle : ButtonStyle = .fill
+    @IBInspectable open var fillStyle : Bool = true {
+        didSet{
+            self.buttonStyle = fillStyle ? .fill : .outline
+        }
+    }
+
     // Private properties
     private var loaderWorkItem: DispatchWorkItem?
     // Init
@@ -92,6 +87,7 @@ open class BALoadingButton: UIButton {
         super.init(frame: frame)
 
     }
+
     /**
      Convenience init of theme button with required information
      
@@ -125,14 +121,15 @@ open class BALoadingButton: UIButton {
         }
         // Set button contents
         self.titleLabel?.font = font
-        self.bgColor = bgColor
         self.backgroundColor = bgColor
+        self.bgColor = bgColor
         self.setBackgroundImage(UIImage(.lightGray), for: .disabled)
         self.contentEdgeInsets = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
         self.setCornerBorder(cornerRadius: cornerRadius)
         self.withShadow = withShadow
         self.cornerRadius = cornerRadius
     }
+
     /**
      Convenience init of material design button using system default colors. This initializer
      reflects dark mode colors on iOS 13 or later platforms. However, it will ignore any custom
@@ -144,19 +141,14 @@ open class BALoadingButton: UIButton {
      - Parameter cornerRadius: the corner radius of the button. It is set to 12.0 by default.
      - Parameter withShadow:   set true to show the shadow of the button.
      - Parameter buttonStyle:  specify the button style. Styles currently available are fill and outline.
-    */
+     */
     @available(iOS 13.0, tvOS 13.0, *)
     public convenience init(icon: UIImage? = nil, text: String? = nil, font: UIFont? = nil,
-                            cornerRadius: CGFloat = 12.0, withShadow: Bool = false, buttonStyle: ButtonStyle) {
-        switch buttonStyle {
+                            cornerRadius: CGFloat = 12.0, withShadow: Bool = false, style: ButtonStyle) {
+        switch style {
         case .fill:
-            #if os(tvOS)
-            self.init(icon: icon, text: text, textColor: .label, font: font,
-                      bgColor: .clear, cornerRadius: cornerRadius, withShadow: withShadow)
-            #else
             self.init(icon: icon, text: text, textColor: .label, font: font,
                       bgColor: .systemFill, cornerRadius: cornerRadius, withShadow: withShadow)
-            #endif
         case .outline:
             self.init(icon: icon, text: text, textColor: .label, font: font,
                       bgColor: .clear, cornerRadius: cornerRadius, withShadow: withShadow)
@@ -164,6 +156,7 @@ open class BALoadingButton: UIButton {
         }
         self.indicator!.color = .label
     }
+
     // draw
     open override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -175,10 +168,12 @@ open class BALoadingButton: UIButton {
         shadowLayer.setAsShadow(bounds: bounds, cornerRadius: self.cornerRadius)
         self.superview?.insertSubview(shadowLayer, belowSubview: self)
     }
+
     // Required init
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+
     /**
      Display the loader inside the button.
      
@@ -188,25 +183,24 @@ open class BALoadingButton: UIButton {
     open func showLoader(userInteraction: Bool, _ completion: LBCallback = nil) {
         showLoader([.titleLabel, .imageview], userInteraction: userInteraction, completion)
     }
+
     /**
      Show a loader inside the button with image.
-     
      - Parameter userInteraction: Enable user interaction while showing the loader.
      */
     open func showLoaderWithImage(userInteraction: Bool = false) {
         showLoader([.titleLabel], userInteraction: userInteraction)
     }
+
     /**
      Display the loader inside the button.
-     
      - Parameter viewsToBeHidden: The views such as titleLabel, imageViewto be hidden while showing loading indicator.
      - Parameter userInteraction: Enable the user interaction while displaying the loader.
      - Parameter completion:      The completion handler.
-    */
+     */
     open func showLoader(_ viewsToBeHidden: [BAButtonViews?], userInteraction: Bool = true, loaderType : LoaderType? = .matirial_Loader, color : UIColor? = .blue,_ completion: LBCallback = nil) {
 
         switch loaderType {
-
         case .matirial_Loader:
             self.indicator = MaterialLoadingIndicator(color: color!)
             break
@@ -242,7 +236,6 @@ open class BALoadingButton: UIButton {
         guard !self.subviews.contains(indicator!) else { return }
         // Set up loading indicator and update loading state
         isLoading = true
-
         self.isUserInteractionEnabled = userInteraction
         indicator!.radius = min(0.7*self.frame.height/2, indicator!.radius)
         indicator!.alpha = 0.0
@@ -254,21 +247,23 @@ open class BALoadingButton: UIButton {
         // Create a new work item
         loaderWorkItem = DispatchWorkItem { [weak self] in
             guard let self = self, let item = self.loaderWorkItem, !item.isCancelled else { return }
-            self.shadowLayer?.alpha = 0.0
-            UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseOut, animations: { () -> Void in
+            UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: { () -> Void in
                 self.transform = CGAffineTransform(scaleX: 0.1, y: 1)
-                self.alpha = 0.2
+                self.shadowLayer?.transform = CGAffineTransform(scaleX: 0.1, y: 1)
+                self.alpha = 0.0
+                self.shadowLayer?.alpha = 0.0
+                guard !item.isCancelled else { return }
+                self.isLoading ? self.indicator!.startAnimating() : self.hideLoader()
             }, completion: { (completed: Bool) -> Void in
-
-                UIView.transition(with: self, duration: 0.16, options: .curveEaseOut, animations: {
+                UIView.transition(with: self, duration: 0.1, options: .curveEaseOut, animations: {
                     self.alpha = 1
                     self.transform = CGAffineTransform(scaleX: 1, y: 1)
                     self.indicator!.alpha = 1.0
                     self.indicator!.center = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
-                    
                     viewsToBeHidden.forEach {
                         switch $0 {
                         case .background:
+                            self.bgColor = self.backgroundColor
                             self.backgroundColor = .clear
                             break
                         case .imageview:
@@ -285,22 +280,17 @@ open class BALoadingButton: UIButton {
                         case .none:
                             break
                         }
-
                     }
-
                 }) { _ in
-                    guard !item.isCancelled else { return }
-                    self.isLoading ? self.indicator!.startAnimating() : self.hideLoader()
                     completion?()
                 }
             })
-
         }
         loaderWorkItem?.perform()
     }
+
     /**
      Hide the loader displayed.
-     
      - Parameter completion: The completion handler.
      */
     open func hideLoader(_ completion: LBCallback = nil) {
@@ -318,14 +308,18 @@ open class BALoadingButton: UIButton {
             // Create a new work item
             self.loaderWorkItem = DispatchWorkItem { [weak self] in
                 guard let self = self, let item = self.loaderWorkItem, !item.isCancelled else { return }
-                UIView.transition(with: self, duration: 0.2, options: .curveEaseIn, animations: {
+                self.transform = CGAffineTransform(scaleX: 0, y: 1)
+                self.shadowLayer?.transform = CGAffineTransform(scaleX: 0, y: 1)
+                UIView.transition(with: self, duration: 0.3, options: .beginFromCurrentState, animations: {
                     self.titleLabel?.alpha = 1.0
                     self.imageView?.alpha = 1.0
-                    if self.shadowAdded == true{
-                        self.shadowLayer?.alpha = 1.0
-                    }
                     self.backgroundColor = self.bgColor
                     self.transform = CGAffineTransform(scaleX: 1, y: 1)
+                    if self.shadowAdded == true{
+                        self.shadowLayer?.alpha = 1.0
+                        self.shadowLayer?.transform = CGAffineTransform(scaleX: 1, y: 1)
+                    }
+
                 }) { _ in
                     guard !item.isCancelled else { return }
                     completion?()
@@ -381,9 +375,7 @@ extension UIActivityIndicatorView: IndicatorProtocol {
         }
         set {
             let ciColor = CIColor(color: newValue)
-            #if os(iOS)
             self.style = newValue.RGBtoCMYK(red: ciColor.red, green: ciColor.green, blue: ciColor.blue).key > 0.5 ? .gray : .white
-            #endif
             self.tintColor = newValue
         }
     }

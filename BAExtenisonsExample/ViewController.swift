@@ -24,18 +24,12 @@ class ViewController: UIViewController {
         view_cr.layer.roundCorners([.topRight, .topLeft], radius: 10)
     }
 
-    @IBAction func BABtn(_ sender: BALoaderButton) {
-
-        print("clicked on BABTN")
-
-    }
-
     @IBAction func buttonClick(_ sender: Any) {
 
         if button.isLoading {
             button.hideLoader()
         }else{
-            button.showLoader([BAButtonViews.background,.imageview,.shadow,.titleLabel], userInteraction: true, loaderType : .ball_Spin,color:  #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)) {
+            button.showLoader([BAButtonViews.background,.imageview,.shadow,.titleLabel], userInteraction: true, loaderType : .matirial_Loader,color:  #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)) {
                     print("helllo... ")
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now().advanced(by: DispatchTimeInterval.seconds(4)) ) {
                     self.button.hideLoader()
@@ -45,10 +39,5 @@ class ViewController: UIViewController {
 
     }
 
-
-    @IBOutlet weak var baloaderbtn: BALoaderButton!
-
-
-    
 }
 
