@@ -165,12 +165,7 @@
 			children = (
 				546F69C525CAB39600CC2638 /* BAExtensions.h */,
 				546F69C625CAB39600CC2638 /* Info.plist */,
-				5482152125CBF72000C7990A /* LoadingButtons */,
-				546F69CE25CAB42A00CC2638 /* ViewUtilities.swift */,
-				546F69EB25CAB80000CC2638 /* LogUitlities.swift */,
-				54373D4F25CBCA430084702E /* BAFloatingTextField.swift */,
-				54373D5325CBCF3E0084702E /* BAGradientView.swift */,
-				54373D5725CBD80A0084702E /* StringUtilities.swift */,
+				54B3D7C825F2065B0098079D /* Classes */,
 			);
 			path = BAExtensions;
 			sourceTree = "<group>";
@@ -222,6 +217,19 @@
 				5482152D25CBF72000C7990A /* IndicatorProtocol.swift */,
 			);
 			path = Indicators;
+			sourceTree = "<group>";
+		};
+		54B3D7C825F2065B0098079D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5482152125CBF72000C7990A /* LoadingButtons */,
+				546F69CE25CAB42A00CC2638 /* ViewUtilities.swift */,
+				546F69EB25CAB80000CC2638 /* LogUitlities.swift */,
+				54373D4F25CBCA430084702E /* BAFloatingTextField.swift */,
+				54373D5325CBCF3E0084702E /* BAGradientView.swift */,
+				54373D5725CBD80A0084702E /* StringUtilities.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,7 +477,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "BAExtensions Release-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +505,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "BAExtensions Release-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
